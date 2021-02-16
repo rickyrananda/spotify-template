@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col h-screen">
+  <div class="flex flex-col h-screen text-gray-400">
     <div
-      class="flex flex-1 bg-red-200 h-full justify-between overflow-y-hidden"
+      class="flex flex-1 bg-gray-main-content h-full justify-between overflow-y-hidden"
     >
-      <div class="w-36 flex flex-col justify-between flex-none bg-red-400">
+      <div class="w-48 flex flex-col justify-between flex-none bg-gray-sidebar">
         <div class="flex-col">one</div>
-        <div class="overflow-y-auto">
+        <div class="sidebar-spotify overflow-y-auto">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
           quod eos officiis dolor debitis? Accusamus necessitatibus impedit
           doloremque. Architecto praesentium veniam adipisci quos culpa
@@ -33,7 +33,7 @@
         </div>
         <div>three</div>
       </div>
-      <div class="overflow-y-auto">
+      <div class="content-spotify overflow-y-auto">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut
         dicta vel, fugit consequuntur aspernatur assumenda quisquam est esse
         dignissimos vitae dolorem placeat tenetur ipsam officiis exercitationem
@@ -144,11 +144,35 @@
         assumenda. Minus error itaque nostrum amet aliquam sit voluptatum
         repellat ipsam maiores quam, illo nesciunt delectus, in temporibus
         veniam optio vero tempore dolores laboriosam ad id et! Quo dolore
-        officiis alias corrupti, excepturi atque.
+        officiis alias corrupti, excepturi atque. Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Sunt aliquid dignissimos, quo esse
+        accusantium magni veniam reiciendis totam nihil dolores nobis quidem
+        amet dicta adipisci voluptatum eum veritatis eius corrupti ipsum iste.
+        Magni corrupti dolorem impedit et dolores temporibus vero saepe minus
+        sed enim blanditiis debitis quod ipsam, tempore nostrum sit velit natus
+        beatae repudiandae asperiores ducimus sint hic, dolorum in? Dolor
+        voluptatibus voluptate sequi nam eius alias consectetur atque provident,
+        assumenda temporibus optio! Ullam quod laboriosam assumenda repellat, a
+        laborum officiis maxime dolor optio eaque explicabo enim molestias odit
+        unde consequuntur sequi suscipit facilis illum voluptatum magnam. Rem
+        obcaecati iure vero fugiat doloremque mollitia ab impedit sequi
+        exercitationem accusantium iusto nulla veritatis doloribus architecto id
+        sint, officia non amet voluptatum optio tenetur quam veniam animi? Ab
+        suscipit nostrum corporis perferendis aliquid tenetur iure nisi eveniet
+        atque unde dignissimos quam sit iste eligendi facere libero tempora
+        animi fugiat voluptatum minus officiis, non ipsa! Velit, ipsum ipsa
+        totam provident atque quibusdam itaque, odit, nisi officiis suscipit
+        dicta. Hic repellendus eum, earum omnis magni alias error accusamus,
+        harum culpa aliquam molestias assumenda debitis. Quos dicta excepturi
+        aliquam assumenda deleniti eaque animi. Non officiis, exercitationem rem
+        deserunt suscipit accusamus officia. Dolorum, quos nemo!
       </div>
-      <div class="w-48 flex-none bg-red-800">Friends Section</div>
+      <div class="w-64 flex flex-none flex-col bg-gray-friends text-white justify-center">
+        <h2 class="px-8 font-bold text-medium text-center">See what your friends are playing</h2>
+        <button class="border mx-auto px-8 py-1.5 mt-12 border-white rounded-full bg-gray-button uppercase font-sans font-semibold text-xs tracking-widest">Find friends</button>
+      </div>
     </div>
-    <div class="bg-blue-200">Bottom</div>
+    <div class="bg-gray-bottom">Bottom</div>
   </div>
 </template>
 
@@ -157,3 +181,25 @@ export default {
   name: "Spotify",
 };
 </script>
+
+<style scoped>
+.sidebar-spotify::-webkit-scrollbar {
+  width: 8px;
+  background-color: #121212;
+}
+
+.sidebar-spotify::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #535353;
+}
+
+.content-spotify::-webkit-scrollbar {
+  width: 8px;
+  background-color: #181818;
+}
+
+.content-spotify::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #535353;
+}
+</style>
